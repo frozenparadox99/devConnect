@@ -45,6 +45,11 @@ function App() {
                 path="/create-profile"
                 component={ProfileForm}
               />
+              <PrivateRoute
+                exact
+                path="/edit-profile"
+                component={ProfileForm}
+              />
             </Switch>
           </section>
         </Fragment>
