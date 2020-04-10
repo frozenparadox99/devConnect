@@ -10,6 +10,7 @@ import Alert from "./components/layout/Alert";
 import Dashboard from "./components/dashboard/Dashboard";
 import ProfileForm from "./components/profile-forms/ProfileForm";
 import PrivateRoute from "./components/routing/PrivateRoute";
+import AddExperience from "./components/profile-forms/AddExperience";
 
 import { Provider } from "react-redux";
 import store from "./store";
@@ -49,6 +50,11 @@ function App() {
                 exact
                 path="/edit-profile"
                 component={ProfileForm}
+              />
+              <PrivateRoute
+                exact
+                path="/add-experience"
+                component={AddExperience}
               />
             </Switch>
           </section>
