@@ -11,6 +11,7 @@ import Dashboard from "./components/dashboard/Dashboard";
 import ProfileForm from "./components/profile-forms/ProfileForm";
 import PrivateRoute from "./components/routing/PrivateRoute";
 import AddExperience from "./components/profile-forms/AddExperience";
+import AddEducation from "./components/profile-forms/AddEducation";
 
 import { Provider } from "react-redux";
 import store from "./store";
@@ -55,6 +56,11 @@ function App() {
                 exact
                 path="/add-experience"
                 component={AddExperience}
+              />
+              <PrivateRoute
+                exact
+                path="/add-education"
+                component={AddEducation}
               />
             </Switch>
           </section>
