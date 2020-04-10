@@ -88,3 +88,4 @@ typings/
 .dynamodb/
 
 config/default.json
+config/production.json
